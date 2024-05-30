@@ -1,0 +1,18 @@
+<project version="4">
+  <component name="DesignSurface">
+    <option name="filePathToZoomLevelMap">
+      <map>
+        <entry key="..\:/Users/kancore/AndroidStudioProjects/KancoreBTL/app/src/main/res/drawable/ic_baseline_pause_24.xml" value="0.342" />
+        <entry key="..\:/Users/kancore/AndroidStudioProjects/KancoreBTL/app/src/main/res/layout/devices_list_row.xml" value="0.1" />
+        <entry key="..\:/Users/kancore/AndroidStudioProjects/KancoreBTL/app/src/main/res/layout/fragment_joystick.xml" value="0.16601815823605706" />
+        <entry key="..\:/Users/kancore/AndroidStudioProjects/KancoreBTL/app/src/main/res/layout/songs_list_item.xml" value="0.26510416666666664" />
+      </map>
+    </option>
+  </component>
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_17" default="true" project-jdk-name="jbr-17" project-jdk-type="JavaSDK">
+    <output url="file://$PROJECT_DIR$/build/classes" />
+  </component>
+  <component name="ProjectType">
+    <option name="id" value="Android" />
+  </component>
+</project>

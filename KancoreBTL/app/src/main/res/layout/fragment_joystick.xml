@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:id="@+id/onPlaying"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="TextView"
+            app:layout_constraintBottom_toTopOf="@+id/playpause"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            android:layout_marginBottom="30dp"
+            />
+
+        <ImageButton
+            android:id="@+id/previous"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintEnd_toStartOf="@id/playpause"
+            app:layout_constraintTop_toTopOf="@id/playpause"
+            app:srcCompat="@drawable/ic_baseline_skip_previous_36"
+            tools:layout_editor_absoluteX="131dp"
+            tools:layout_editor_absoluteY="112dp" />
+
+        <ImageButton
+            android:id="@+id/playpause"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/ic_baseline_play_arrow_36" />
+
+        <ImageButton
+            android:id="@+id/next_song"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintStart_toEndOf="@+id/playpause"
+            app:layout_constraintTop_toTopOf="@id/playpause"
+            app:srcCompat="@drawable/ic_baseline_skip_next_36" />
+
+        <com.kancoreBC.kancorektl.KanJoypadView
+            android:id="@+id/rightJoypad"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:layout_marginEnd="20dp"
+            android:layout_marginBottom="20dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent" />
+        <TextView
+            android:id="@+id/leftPower"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:text="@string/left_wheel_default"
+            app:layout_constraintStart_toStartOf="@id/leftJoypad"
+            app:layout_constraintBottom_toTopOf="@id/leftJoypad"/>
+
+        <ImageButton
+            android:id="@+id/reconnectBT"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintStart_toEndOf="@+id/leftJoypad"
+            app:layout_constraintTop_toTopOf="@id/leftJoypad"
+            app:layout_constraintEnd_toStartOf="@id/rightJoypad"
+            app:layout_constraintBottom_toBottomOf="@id/leftJoypad"
+            app:srcCompat="@drawable/ic_baseline_bluetooth_connected_48" />
+        <TextView
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:text="@string/reconnect_text"
+            app:layout_constraintStart_toStartOf="@id/reconnectBT"
+            app:layout_constraintEnd_toEndOf="@id/reconnectBT"
+            app:layout_constraintTop_toBottomOf="@id/reconnectBT"/>
+
+        <com.kancoreBC.kancorektl.KanJoypadView
+            android:id="@+id/leftJoypad"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            android:layout_marginStart="20dp"
+            android:layout_marginBottom="20dp"/>
+        <TextView
+            android:id="@+id/rightPower"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:text="@string/right_wheel_default"
+            app:layout_constraintStart_toStartOf="@id/rightJoypad"
+            app:layout_constraintBottom_toTopOf="@id/rightJoypad"/>
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</layout>
